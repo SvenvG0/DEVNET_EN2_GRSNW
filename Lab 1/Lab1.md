@@ -135,8 +135,6 @@ Open the different tools.
 ### Task troubleshooting:
 
 ### Task verification:
-		
-03. Verificatie van de taak:
 - Python: 
     - ```python3.8 --version```
 - PIP:
