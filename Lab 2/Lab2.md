@@ -173,7 +173,8 @@ Take a look at the workings of postman via a video on `youtube`.
 #### Investigate the libraries used by the add100RandomBooks.py program.
 - Review the Python script and its dependencies (Imports), by clicking on the script. 
 
->[!NOTE]You will use the Python requests library throughout this course. The requests library is required if you
+>[!NOTE]
+>You will use the Python requests library throughout this course. The requests library is required if you
 want to use **Python** to make API requests using GET, POST, DELETE and other HTTP methods.
 
 #### Practice generating random data using the faker library.
