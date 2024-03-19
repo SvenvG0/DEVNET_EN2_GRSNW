@@ -198,10 +198,12 @@ git log
 - Log into GitHub
 - Create a repository with:
     - Name 
-        ```   devasc-study-team
+        ```
+        devasc-study-team
         ```
     - Description
-        ```   Working together to pass the DEVASC exam
+        ```
+        Working together to pass the DEVASC exam
         ```
     - Public/Private \
         `Private`
