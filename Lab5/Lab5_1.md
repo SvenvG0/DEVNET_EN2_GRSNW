@@ -259,7 +259,7 @@ git push origin master
 - Password: `<token>`
 
 >[!Warning]
->: If, after entering your username and password, you get a fatal error stating repository is not found,
+>If, after entering your username and password, you get a fatal error stating repository is not found,
 you most likely submitted an incorrect URL. You will need to reverse your git add command with the git
 remote rm origin command.
 
