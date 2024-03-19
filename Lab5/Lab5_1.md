@@ -266,4 +266,4 @@ remote rm origin command.
 Go to GitHub and verify:
 - Repository
     - devas-study-team
-        - DEVSASC.txt
+        - DEVASC.txt
