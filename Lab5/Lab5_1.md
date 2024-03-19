@@ -36,8 +36,7 @@ git status
 ### Staging and Committing
 #### Prep
 ```bash
-echo "I am on my way to passing the
-Cisco DEVASC exam" > DEVASC.txt
+echo "I am on my way to passing the Cisco DEVASC exam" > DEVASC.txt
 ls -la
 cat DEVASC.txt
 git status
@@ -71,8 +70,7 @@ git log
 ### Modifying and Tracking
 #### Modifying
 ```bash
-echo "I am beginning to understand
-Git!" >> DEVASC.txt
+echo "I am beginning to understand Git!" >> DEVASC.txt
 cat DEVASC.txt
 git status
 ```
@@ -111,8 +109,7 @@ git branch
 ```
 Modify the file from the new branch:
 ```bash
-echo "This text was added
-originally while in the feature branch" >> DEVASC.txt
+echo "This text was added originally while in the feature branch" >> DEVASC.txt
 cat DEVASC.txt
 ```
 
@@ -146,12 +143,10 @@ First we'll make a branch again and make some changes in the new branch. Then we
 git branch test
 git checkout test
 sed -i 's/Cisco/NetAcad/' DEVASC.txt
-git commit -a -m "Change Cisco to
-NetAcad"
+git commit -a -m "Change Cisco to NetAcad"
 git checkout master
 sed -i 's/Cisco/DevNet/' DEVASC.txt
-git commit -a -m "Changed Cisco to
-DevNet"
+git commit -a -m "Changed Cisco to DevNet"
 ```
 #### merge
 Now that the preperations are completed, try to merge `test` with `master`.
