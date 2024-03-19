@@ -60,7 +60,7 @@ git commit -m "Committing
 DEVASC.txt to begin tracking changes"
 ```
 >[!Important]
->Notice the respons, every commit has a unique key. We can use this later.
+>Notice the response, every commit has a unique key. We can use this later.
 
 Lets take a look at the log we just created:
 ```bash
