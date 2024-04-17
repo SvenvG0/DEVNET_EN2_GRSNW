@@ -28,7 +28,7 @@ print("The default-operation contains: {}".format(defop.text))
 print("The test-option contains: {}".format(testop.text))
 ```
 Save and run the script and you should get the following output:
->devasc@labvm:~/labs/devnet-src/parsing$ python3 parsexml.py \
+>devasc@labvm:\~/labs/devnet-src/parsing$ python3 parsexml.py \
 The default-operation contains: merge \
 The test-option contains: set \
 devasc@labvm:~/labs/devnet-src/parsing$
@@ -73,7 +73,7 @@ print("The token expires in {} seconds.".format(ourjson['expires_in']))
 >We are not only printing the JSON data but also data of interest because of the custom print commands.
 
 Save and run the script, you should see this output:
-> devasc@labvm:~/labs/devnet-src/parsing$ python3 parsejson.py \
+> devasc@labvm:\~/labs/devnet-src/parsing$ python3 parsejson.py \
 {'access_token': 'ZDI3MGEyYzQtNmFlNS00NDNhLWFlNzAtZGVjNjE0MGU1OGZmZWNmZDEwN2ItYTU3', \
 'expires_in': 1209600, 'refresh_token': \
 'MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MDEyMzQ1Njc4OTEyMzQ1Njc4', \
