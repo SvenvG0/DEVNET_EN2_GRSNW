@@ -4,7 +4,7 @@
 Open the Visio provided \
 Create an IP Table:
 
-![alt text](SvenvG0/DEVNET_EN2_GRSNW/Lab4/Screenshots/IPTable.png?raw=true)
+![alt text](/SvenvG0/DEVNET_EN2_GRSNW/Lab4/Screenshots/IPTable.png?raw=true)
 
 #### Physical
 
