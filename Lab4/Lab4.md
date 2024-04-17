@@ -15,17 +15,17 @@ Turn on the switches
 
 Connect the switches:
 
-![alt text](Switches.png)
+![Switches](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/assets/104322584/d30fb6fd-bff4-4a27-9c71-7a0b945bb671)
 
-![alt text](SwitchesC.png)
+![SwitchesC](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/assets/104322584/18466fdf-921a-4a7a-8134-069730269d62)
 
 Turn on the routers
 
 Connect the switches:
 
-![alt text](Routers.png)
+![Routers](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/assets/104322584/c5fe5e16-d227-4a48-a448-5a7a7a750e80)
 
-![alt text](RoutersC.png)
+![RoutersC](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/assets/104322584/5014839c-66f9-4b12-b1d3-925c962c5eac)
 
 >[!Important]
 >Notice Gig 0/0/1 on both routers, they're connected to another switch and router.
