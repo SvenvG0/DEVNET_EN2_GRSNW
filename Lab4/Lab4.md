@@ -1,5 +1,7 @@
 # Lab4: NETWORK INFRASTRUCTURE AND TROUBLESHOOTING
 ## Part 1: Network Infrastructure
+>[!Warning]
+>In this document we are assuming a row 7 rightside position. So replace the values that are dependent on your position.
 ### Prep
 #### Document
 Open the Visio provided \
