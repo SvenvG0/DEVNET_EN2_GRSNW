@@ -1,6 +1,7 @@
 # Lab4: NETWORK INFRASTRUCTURE AND TROUBLESHOOTING
 ## Part 1: Network Infrastructure
 ### Prep
+#### Document
 Open the Visio provided \
 Create an IP Table:
 
@@ -31,7 +32,7 @@ Connect the switches:
 >Notice Gig 0/0/1 on both routers, they're connected to another switch and router.
 >These devices are already configured in the lab. You only need to patch the cables correctly.
 
-#### Configure
+### Configure
 ##### LAB-RA0X-A02-SW01
 ```
 Enable
@@ -312,4 +313,17 @@ Configure the clients IPV4 address.
 - DEFAULT-GATEWAY: 172.17.7.65
 - DNS: 10.199.64.66
 
-  You should be able to ping to the other devices and to devices outside your LAN.
+You should be able to ping to the other devices and to devices outside your LAN.
+
+### Troubleshooting
+
+#### Can't ping
+- Make sure your IPV4 address is filled in correctly?
+- Is the default gateway filled correctly?
+- Is the default static route configured correctly?
+
+#### Can't be pinged
+- Is the firewall on your PC off?
+
+#### Switches can not reach router
+- did you only activate the subnet interfaces? (Check the main one)
