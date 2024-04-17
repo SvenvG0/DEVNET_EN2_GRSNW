@@ -311,3 +311,5 @@ Configure the clients IPV4 address.
 - SUBNETMASK: 255.255.255.240
 - DEFAULT-GATEWAY: 172.17.7.65
 - DNS: 10.199.64.66
+
+  You should be able to ping to the other devices and to devices outside your LAN.
