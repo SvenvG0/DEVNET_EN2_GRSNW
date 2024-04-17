@@ -91,7 +91,7 @@ print(yaml.dump(ourjson))
 ```
 
 Save and run the script, you should see this output added at the end:
->devasc@labvm:~/labs/devnet-src/parsing$ python3 parsejson.py \
+>devasc@labvm:\~/labs/devnet-src/parsing$ python3 parsejson.py \
 ... \
 access_token: ZDI3MGEyYzQtNmFlNS00NDNhLWFlNzAtZGVjNjE0MGU1OGZmZWNmZDEwN2ItYTU3 \
 expires_in: 1209600 \
