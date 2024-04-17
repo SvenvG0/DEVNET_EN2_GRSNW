@@ -137,7 +137,7 @@ print(json.dumps(ouryaml, indent=4))
 
 Save and run the script, you should see this output added at the end:
 >devasc@labvm:~/labs/devnet-src/parsing$ python3 parseyaml.py \
-... \
+...
 { \
  "access_token": "ZDI3MGEyYzQtNmFlNS00NDNhLWFlNzAtZGVjNjE0MGU1OGZmZWNmZDEwN2ItYTU3", \
  "expires_in": 1209600, \
