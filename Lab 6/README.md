@@ -7,4 +7,4 @@ If you are not familiar with the following topics, please research first before 
 
 If you are not familiar with netmiko, that is fine! In this lab we take a first look at netmiko and use different tools to learn how to use it.
 
-## HAVE FUN!
+### HAVE FUN!
