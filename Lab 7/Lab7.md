@@ -91,14 +91,14 @@ Close the connection.
 
 You will now see the Dashboard for the CSR1000v. You are now accessing the CSR1000v's WebUI from the DEVASC virtual machine.
 
-![alt text](DEVASCWebDashboard.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/DEVASCWebDashboard.png?raw=true)
 
 ### From your local computer, access the CSR1000v WebUI (Web User Interface)
 - Follow the same steps but on your local computer.
 
 You will now see the Dashboard for the CSR1000v. You are now accessing the CSR1000v's WebUI from your local computer.
 
-![alt text](LocalWebDashboard.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/LocalWebDashboard.png?raw=true)
 
 ## Part 2: Explore YANG Models
 
@@ -111,24 +111,24 @@ We'll explore yang files by making them more readable with the pyang module.
 
 >[!Tip]
 >If you are familiar with the output of IOS show commands, you will recognize some nodes like on line 221. Leaf is enabled. \
- ![alt text](image.png)
+ ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/Leaf_enabled.png?raw=true)
 
 ### Copy the ietf-interfaces.yang model to a folder on your VM
 
 - Open VS code and open devnet-src
-![alt text](image-1.png)
+ ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/VSCode_Devnet.png?raw=true)
 
 - Open a terminal window in VS Code
-![alt text](image-2.png)
+ ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/Terminal_VSCode.png?raw=true)
 
 - Create a subdirectory called pyang in the /devnet-src directory.
-![alt text](image-3.png)
+ ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/SubDirPyang.png?raw=true))
 
 - Display the YANG model of the previous task in Raw format
-![alt text](image-4.png)
+ ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/RawYangModel.png?raw=true)
 
 - Copy the URL
-![alt text](image-5.png)
+ ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/CopyURL.png?raw=true)
 
 
 - In the terminal navigate to the new pyang folder and use wget to get the file.
@@ -138,7 +138,7 @@ cd labs/devasc-src/pyang
 wget https://raw.githubusercontent.com/YangModels/yang/main/vendor/cisco/xe/1693/ietf-interfaces.yang
 ls
 ```
-![alt text](TerminalCommands.png)
+ ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/TerminalCommands.png?raw=true)
 
 ### Verify pyang is installed and up to date
 
@@ -158,7 +158,7 @@ To upgrade pyang to the latest version use:
 pip3 install pyang --upgrade
 ```
 
-![alt text](image-6.png)
+ ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/InstallPyang.png?raw=true)
 
 - Navigate to the pyang directory and use pyang to transform the YANG model
 
@@ -167,7 +167,7 @@ cd pyang
 pyang -f tree ietf-interfaces.yang
 ```
 
-![alt text](EndOfPyang.png)
+ ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/EndOfPyang.png?raw=true)
 
 >[!Tip]
 >If you do not know how to use pyang, use `pyang -h | more`.
@@ -184,7 +184,7 @@ pyang -f tree ietf-interfaces.yang
 enable
 show ip interface brief
 ```
-![alt text](image-7.png)
+ ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/ShowInterfaceBrief.png?raw=true)
 
 >[!Note]
 >Notice the ip address and use it in the next command on the DEVASC
@@ -194,23 +194,23 @@ show ip interface brief
 ```bash
 ping 192.168.56.101
 ```
-![alt text](image-8.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/pingCSR.png?raw=true)
 
 >[!Note]
 >Your CSR1000v VM can have a different ip-address.
 
 - SSH from DEVASC to CSR1000v
-
-![alt text](image-9.png)
+  
+ ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/SSHCSR.png?raw=true)
 
 >[!Warning]
 > If you get an error like this:
-> ![alt text](SSH_Error.png)
+>  ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/SSH_Error.png?raw=true)
 > It is because our previous exercise but don't worry use the command below to reset the ssh verification:
 > ```bash
 > ssh-keygen -f "/home/devasc/.ssh/known_hosts" -R "192.168.56.101"
 > ```
-> ![alt text](Correct_Error_SSH.png)
+>![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/Correct_Error.png?raw=true)
 > now try again
 
 - With the SSH connection active, verify if a NETCONF is already running:
@@ -220,7 +220,7 @@ show platform software yang-management process
 >[!Note]
 >Looks like the deamon is running (`ncsshd`)
 
-![alt text](image-10.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/ShowServices.png?raw=true)
 
 >[!Warning]
 >If it is not running use the following commands:
@@ -243,7 +243,7 @@ ssh cisco@192.168.56.101 -p 830 -s netconf
 ```
 
 The output will look like this:
-![alt text](XML_Results.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/XML_Results.png?raw=true)
 
 >[!Note]
 >Notice the construct of the message by opening with `<hello` because it is an hello message. And NETCONFIG messages end with `]]>]]>`
@@ -264,7 +264,7 @@ The output will look like this:
     enable
     show netconf-yang sessions
     ```  
-    ![alt text](image-11.png)
+    ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/ShowYangSessions.png?raw=true)
 
 - Now make an RPC message. It will give a respons back:
     ```
@@ -277,11 +277,11 @@ The output will look like this:
     </rpc>
     ]]>]]>
     ```
-    ![alt text](image-12.png)
+    ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/RPCResponse.png?raw=true)
 
 >[!Tip]
 >Common RPC commands:
->![alt text](image-13.png)
+ ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/CommonRPCCommands.png?raw=true)
 
 - Take the respons and use a prettifyer to make the respons more readable:
     ```
