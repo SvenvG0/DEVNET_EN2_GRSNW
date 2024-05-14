@@ -215,7 +215,7 @@ ping 192.168.56.101
 > ```bash
 > ssh-keygen -f "/home/devasc/.ssh/known_hosts" -R "192.168.56.101"
 > ```
->![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/Correct_Error.png?raw=true)
+>![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/Correct_Error_SSH.png?raw=true) \
 > now try again
 
 - With the SSH connection active, verify if a NETCONF is already running:
