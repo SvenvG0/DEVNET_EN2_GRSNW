@@ -121,7 +121,7 @@ We'll explore yang files by making them more readable with the pyang module.
 
 - Open a terminal window in VS Code
   
- ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/Terminal_VSCode.png?raw=true)
+ ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/TerminalVSCode.png?raw=true)
 
 - Create a subdirectory called pyang in the /devnet-src directory.
   
