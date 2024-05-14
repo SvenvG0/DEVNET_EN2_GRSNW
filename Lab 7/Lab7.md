@@ -116,18 +116,23 @@ We'll explore yang files by making them more readable with the pyang module.
 ### Copy the ietf-interfaces.yang model to a folder on your VM
 
 - Open VS code and open devnet-src
+  
  ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/VSCode_Devnet.png?raw=true)
 
 - Open a terminal window in VS Code
+  
  ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/Terminal_VSCode.png?raw=true)
 
 - Create a subdirectory called pyang in the /devnet-src directory.
+  
  ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/SubDirPyang.png?raw=true))
 
 - Display the YANG model of the previous task in Raw format
+  
  ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/RawYangModel.png?raw=true)
 
 - Copy the URL
+  
  ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/CopyURL.png?raw=true)
 
 
@@ -243,6 +248,7 @@ ssh cisco@192.168.56.101 -p 830 -s netconf
 ```
 
 The output will look like this:
+
 ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/XML_Results.png?raw=true)
 
 >[!Note]
@@ -281,6 +287,7 @@ The output will look like this:
 
 >[!Tip]
 >Common RPC commands:
+
  ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/CommonRPCCommands.png?raw=true)
 
 - Take the respons and use a prettifyer to make the respons more readable:
@@ -348,6 +355,7 @@ The output will look like this:
         ```
     >[!Note]
     >We can see the respons of CSR1000v:
+    >
     > ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/SessionConfirmation.png?raw=true)
 
     >[!Tip]
@@ -669,6 +677,7 @@ no netconf-yang
 ### Open and Configure Postman
 Devasc:
 - Open postman
+
     ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/OpenPostman.png?raw=true)
 
     >[!Note]
@@ -677,6 +686,7 @@ Devasc:
     to use this application.
 
 - Disable SSL certification verification
+
     ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/OpenSettings.png?raw=true)
     ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/DisableSSLCertVer.png?raw=true)
 
@@ -717,6 +727,7 @@ Value 2
 application/yang-data+json
 ```
 Now we are going to use what we prepared. First lets duplicate our tab.
+
 ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/DuplicateTab.png?raw=true)
 
 Let use the ietf-interfaces YANG model by using the following URL:
@@ -724,6 +735,7 @@ Let use the ietf-interfaces YANG model by using the following URL:
 https://192.168.56.101/restconf/data/ietf-interfaces:interfaces
 ```
 You should get the following respons or something close to it:
+
 ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/GETResponse_2.png?raw=true)
 
 Try again but clarify further that you just want information about interface `GigabitEthernet1` with the following URL:
@@ -835,6 +847,7 @@ python3 restconf-get.py
 ```
 
 The response should be:
+
  ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/GETScriptResponse.png?raw=true)
 
 - To get the actual JSON reponse, create a new variable and print it.
@@ -847,6 +860,7 @@ print(response_json)
 ```
 
 - Save and run the script again. You should get the following respons:
+
  ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/GETScriptResponse_2.png?raw=true)
 
 - Prettify the output by changing `print(response_json)`
