@@ -14,12 +14,10 @@
 
 #### Configure the VM
 - Update the installation ISO location as shown below:
-![alt text](CRS1000v_Settings.png)
 
-    ![alt text](CRS1000v_Settings_iso.png)
-
-    ![alt text](CRS1000v_Settings_iso_select.png)
-
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/CRS1000v_Settings.png?raw=true)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/CRS1000v_Settings_iso.png?raw=true)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/CRS1000v_Settings_iso_select.png?raw=true)
 
 >[!Warning] 
 >Do **NOT** change the Second CD Drive settings. That is used for the initial configuration of the router.
@@ -27,7 +25,7 @@
 #### Check the adapter
 Make sure it is on a Host-only adapter!
 
-![alt text](CRS1000v_Settings_Adapter.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/CRS1000v_Settings_Adapter.png?raw=true)
 
 >[!Tip]
 >If you need to change the adapter, make sure the adapter is using the 192.168.56.1/24 IPv4-address.
@@ -47,8 +45,7 @@ Switch to the privileged EXEC prompt and show the ip address.
 Enable
 Show ip interface brief
 ```
-
-![alt text](ShowIPInterfaceBrief.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/ShowIPInterfaceBrief.png?raw=true)
 
 >[!Important]
 >Take note of the ip address shown, we will use it in the next steps!
@@ -59,7 +56,7 @@ Start the DEVASC VM in virtualbox
 - Open a Terminal window.
 - Ping the CSR1000v VM at its IPv4 address.
 
-    ![alt text](PingCSR1000v.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/PingCSR1000v.png?raw=true)
 
 ### Establish a secure shell (SSH) session with the CSR1000v.
 Some of the tasks you will complete in later labs will require an SSH session with the CSR1000v.
@@ -74,7 +71,7 @@ ssh cisco@192.168.56.101
 >[!Tip] 
 >Use the password cisco123! to authenticate.
 
-![alt text](SSHCSR1000v.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/SSHCSR1000v.png?raw=true)
 
 >[!Note]
 >Notice that you are automatically in privileged EXEC mode. Enter exit to end the SSH session.
@@ -85,11 +82,9 @@ Close the connection.
 - Open a web browser on the DEVASC VM
 - Follow the steps as shown below:
 
-    ![alt text](WebUICSR1000v.png)
-
-    ![alt text](WebUICSR1000v_2.png)
-
-    ![alt text](WebUICSR1000v_3.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/WebUICSR1000v.png?raw=true)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/WebUICSR1000v_2.png?raw=true)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/WebUICSR1000v_3.png?raw=true)
 
 >[!Tip] 
 >Use the password cisco123! to authenticate.
