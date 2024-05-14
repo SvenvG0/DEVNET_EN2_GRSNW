@@ -8,9 +8,9 @@
 ### Install the CSR1000v VM.
 #### Ad the VM
 - Open Oracle VirtualBox Manager and import the VM as shown below:
-![alt text](VirtualBoxImport.png)
 
-    ![alt text](VirtualBoxImport_Location.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/VirtualBoxImport.png?raw=true)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/VirtualBoxImport_Location.png?raw=true)
 
 #### Configure the VM
 - Update the installation ISO location as shown below:
