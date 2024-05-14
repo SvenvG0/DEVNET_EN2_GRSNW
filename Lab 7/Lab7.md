@@ -289,7 +289,7 @@ The output will look like this:
     ```
 - https://jsonformatter.org/xml-pretty-print
 
-    ![alt text](image-14.png)
+    ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/OnlineFormatter.png?raw=true)
 
 - Close the NETCONF session
     ```
@@ -297,13 +297,13 @@ The output will look like this:
     <close-session />
     </rpc>
     ```
-    ![alt text](image-15.png)
+    ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/CloseRPC.png?raw=true)
 
 - Go to CSR1000v again and check if the session is closed
     ```
     show netconf-yang sessions
     ```
-    ![alt text](image-16.png)
+    ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/ShowYangSessions_2.png?raw=true)
 
 ### Use ncclient to Connect to NETCONF
 
@@ -328,7 +328,7 @@ The output will look like this:
     - Like you created the pyang folder, now create a folder `netconf`
     - Ad a file named `ncclient-netconf.py` to the folder
     
-        ![alt text](image-17.png)
+        ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/CreateNetconfScript.png?raw=true)
     - Paste this script in the file:
         ```python
         from ncclient import manager
@@ -348,7 +348,7 @@ The output will look like this:
         ```
     >[!Note]
     >We can see the respons of CSR1000v:
-    > ![alt text](image-18.png)
+    > ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/SessionConfirmation.png?raw=true)
 
     >[!Tip]
     >Feel free to test every part we are adding but i won't mention it again
@@ -637,7 +637,7 @@ With the SSH connection open, check if RESTCONF is already running.
 ```
 show platform software yang-management process
 ```
-![alt text](image-19.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/ShowYangProcess.png?raw=true)
 
 It is not running in this case, so we will activate it.
 ```
@@ -646,7 +646,7 @@ restconf
 exit
 show platform software yang-management process
 ```
-![alt text](image-20.png)
+ ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/ShowYangProcess_2.png?raw=true)
 
 >[!Note]
 >Notice that ncsshd is now added with a `Running` status. This is the NETCONF service as we have seen in `Part 3`, but we do not need it in this lab. But we do need an https server (nginx).
@@ -669,7 +669,7 @@ no netconf-yang
 ### Open and Configure Postman
 Devasc:
 - Open postman
-    ![alt text](image-22.png)
+    ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/OpenPostman.png?raw=true)
 
     >[!Note]
     >If this is the first time you have opened Postman, it may ask you to create an account or sign in. At the 
@@ -677,8 +677,8 @@ Devasc:
     to use this application.
 
 - Disable SSL certification verification
-    ![alt text](image-23.png)
-    ![alt text](image-24.png)
+    ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/OpenSettings.png?raw=true)
+    ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/DisableSSLCertVer.png?raw=true)
 
 ### Use Postman to Send GET Requests 
 Start a GET request on the URL.
@@ -686,19 +686,19 @@ Start a GET request on the URL.
 >[!Important]
 >Make sure you use `https`!
 
-![alt text](image-25.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/GETRequest.png?raw=true)
 
 As you can see we are not getting a respons. We need to authenticate ourselves. We know the local user and password, so lets configure postman further.
 
-![alt text](image-26.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/Authentication.png?raw=true)
 
 Now try sending the GET request again.
 
-![alt text](image-27.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/GETRequestRespons.png?raw=true)
 
 Notice we get an respons in XML format by default. We will change this to JSON.
 
-![alt text](image-28.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/AlterHeader.png?raw=true)
 
 Key 1
 ```
@@ -717,20 +717,20 @@ Value 2
 application/yang-data+json
 ```
 Now we are going to use what we prepared. First lets duplicate our tab.
-![alt text](image-29.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/DuplicateTab.png?raw=true)
 
 Let use the ietf-interfaces YANG model by using the following URL:
 ```
 https://192.168.56.101/restconf/data/ietf-interfaces:interfaces
 ```
 You should get the following respons or something close to it:
-![alt text](image-30.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/GETResponse_2.png?raw=true)
 
 Try again but clarify further that you just want information about interface `GigabitEthernet1` with the following URL:
 ```
 https://192.168.56.101/restconf/data/ietf-interfaces:interfaces/interface=GigabitEthernet1
 ```
-![alt text](image-31.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/GETRespons_3.png?raw=true)
 
 >[!Tip]
 >If you request interface information from a different Cisco device with names that use forward slashes, such as GigabitEthernet0/0/1, use the HTML code `%2F` for the forward slashes in the interface 
@@ -777,7 +777,7 @@ Past the following in the body `raw` format to resolve:
 
 Now we get an `201 Created` message.
 
-![alt text](image-32.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/PUTResponse.png?raw=true)
 
 >[!Tip]
 >You can check this by using the following command:
@@ -835,7 +835,7 @@ python3 restconf-get.py
 ```
 
 The response should be:
-![alt text](image-33.png)
+ ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/GETScriptResponse.png?raw=true)
 
 - To get the actual JSON reponse, create a new variable and print it.
 ```python
@@ -847,14 +847,14 @@ print(response_json)
 ```
 
 - Save and run the script again. You should get the following respons:
-![alt text](image-34.png)
+ ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/GETScriptResponse_2.png?raw=true)
 
 - Prettify the output by changing `print(response_json)`
 ```python
 print(json.dumps(response_json, indent=4))
 ```
 
-![alt text](image-35.png)
+ ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/GETScriptResponse_3.png?raw=true)
 
 Your script should now look like:
 ```python
