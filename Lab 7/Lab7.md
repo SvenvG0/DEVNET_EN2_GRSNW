@@ -209,7 +209,7 @@ ping 192.168.56.101
  ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/SSHCSR.png?raw=true)
 
 >[!Warning]
-> If you get an error like this:
+> If you get an error like this: \
 >  ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/SSH_Error.png?raw=true)
 > It is because our previous exercise but don't worry use the command below to reset the ssh verification:
 > ```bash
