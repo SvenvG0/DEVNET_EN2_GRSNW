@@ -680,10 +680,10 @@ Devasc:
 
     ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/OpenPostman.png?raw=true)
 
-    >[!Note]
-    >If this is the first time you have opened Postman, it may ask you to create an account or sign in. At the 
-    bottom of the window, you can also click the “Skip” message to skip signing in. Signing in is not required 
-    to use this application.
+>[!Note]
+>If this is the first time you have opened Postman, it may ask you to create an account or sign in. At the 
+bottom of the window, you can also click the “Skip” message to skip signing in. Signing in is not required 
+to use this application.
 
 - Disable SSL certification verification
 
