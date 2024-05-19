@@ -319,17 +319,17 @@ The output will look like this:
     pip3 list --format=columns | grep ncclient
     ```
 
-    >[!Important]
-    >If `ncclient` is not installed use:
-    > ```bash
-    > pip3 install ncclient
-    > ```
+>[!Important]
+>If `ncclient` is not installed use:
+> ```bash
+> pip3 install ncclient
+> ```
 
-    >[!Tip]
-    >If you want to see all the modules currently installed use:
-    > ```bash
-    > pip3 list --format=columns | more
-    > ```
+>[!Tip]
+>If you want to see all the modules currently installed use:
+> ```bash
+> pip3 list --format=columns | more
+> ```
 
 - Create a script to use ncclient to connect to the NETCONF service
     - Like you created the pyang folder, now create a folder `netconf`
@@ -353,13 +353,13 @@ The output will look like this:
         cd netconf/
         python3 ncclient-netconf.py
         ```
-    >[!Note]
-    >We can see the respons of CSR1000v:
-    >
-    > ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/SessionConfirmation.png?raw=true)
+>[!Note]
+>We can see the respons of CSR1000v:
+>
+> ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/SessionConfirmation.png?raw=true)
 
-    >[!Tip]
-    >Feel free to test every part we are adding but i won't mention it again
+>[!Tip]
+>Feel free to test every part we are adding but i won't mention it again
 
     -  Ad a for loop to the script that prints the capabilities of the device.
         ```python
@@ -367,8 +367,8 @@ The output will look like this:
         for capability in m.server_capabilities:
             print(capability)
         ```
-    >[!Tip]
-    >If you do not want to get 400+ lines during each test, comment out the print statement
+>[!Tip]
+>If you do not want to get 400+ lines during each test, comment out the print statement
 
     - Ad the following to your script:
         ```python
@@ -379,8 +379,8 @@ The output will look like this:
         ```
         show netconf-yang datastores
         ```
-    >[!Note]
-    >If you are testing the results, you will see you need the prettifyer of the previous exercise to make the result easier to read. In the next part we will make our own with python.
+>[!Note]
+>If you are testing the results, you will see you need the prettifyer of the previous exercise to make the result easier to read. In the next part we will make our own with python.
 
     -   Prettify results by adding the following line to the beginning of the script:
         ```python
