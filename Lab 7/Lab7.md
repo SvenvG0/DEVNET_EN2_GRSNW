@@ -742,7 +742,7 @@ Try again but clarify further that you just want information about interface `Gi
 ```
 https://192.168.56.101/restconf/data/ietf-interfaces:interfaces/interface=GigabitEthernet1
 ```
-![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/GETRespons_3.png?raw=true)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/GETResponse_3.png?raw=true)
 
 >[!Tip]
 >If you request interface information from a different Cisco device with names that use forward slashes, such as GigabitEthernet0/0/1, use the HTML code `%2F` for the forward slashes in the interface 
