@@ -110,8 +110,8 @@ We'll explore yang files by making them more readable with the pyang module.
 - Navigate to https://github.com/YangModels/yang/blob/main/vendor/cisco/xe/1693/ietf-interfaces.yang
 
 >[!Tip]
->If you are familiar with the output of IOS show commands, you will recognize some nodes like on line 221. Leaf is enabled. \
- ![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/Leaf_enabled.png?raw=true)
+>If you are familiar with the output of IOS show commands, you will recognize some nodes like on line 221. Leaf is enabled.
+>![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/Leaf_enabled.png?raw=true)
 
 ### Copy the ietf-interfaces.yang model to a folder on your VM
 
