@@ -111,7 +111,7 @@ We'll explore yang files by making them more readable with the pyang module.
 
 >[!Tip]
 >If you are familiar with the output of IOS show commands, you will recognize some nodes like on line 221. Leaf is enabled. \ 
->![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/Leaf_enabled.png?raw=true)
+>![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%207/Images/Leaf_Enabled.png?raw=true)
 
 ### Copy the ietf-interfaces.yang model to a folder on your VM
 
