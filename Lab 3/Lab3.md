@@ -31,7 +31,7 @@ this lab or this course.
 
 - Try some basic calculations in python.
 
-![alt text](./images/operatorTable.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%203/Images/operatorTable.png?raw=true)
 
 >[!Note]
 >Python follows PEMDAS as order of operations:
