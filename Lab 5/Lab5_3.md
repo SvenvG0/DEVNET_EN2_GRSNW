@@ -28,7 +28,7 @@ print("The default-operation contains: {}".format(defop.text))
 print("The test-option contains: {}".format(testop.text))
 ```
 Save and run the script and you should get the following output:
->devasc@labvm:~/labs/devnet-src/parsing$ python3 parsexml.py \
+>devasc@labvm:\~/labs/devnet-src/parsing$ python3 parsexml.py \
 The default-operation contains: merge \
 The test-option contains: set \
 devasc@labvm:~/labs/devnet-src/parsing$
