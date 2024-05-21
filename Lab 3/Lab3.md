@@ -56,7 +56,7 @@ quit()
 
 - Make a script by making a new file and giving it the name `hello-world.py`.
 
-![alt text](./images/HWscript.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%203/Images/HWscript.png?raw=true)
 
 >[!Note]
 >Notice the `.py` extension. This marks the file as a file with python commands. A file with commands is called a script.
@@ -87,7 +87,7 @@ with a decimal, the interpreter ignores the decimal. For example, 3.75 is interp
 • String - any sequence of characters such as letters, numbers, symbols, or punctuation marks. \
 • Boolean - any data type that has a value of either True or False
 
-![alt text](./images/BooleanOperators.png)
+![alt text](https://github.com/SvenvG0/DEVNET_EN2_GRSNW/blob/main/Lab%203/Images/BooleanOperators.png?raw=true)
 
 - Now use `=` to create some variables and play around with them.
 
