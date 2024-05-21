@@ -91,7 +91,7 @@ print(yaml.dump(ourjson))
 ```
 
 Save and run the script, you should see this output added at the end:
->devasc@labvm:~/labs/devnet-src/parsing$ python3 parsejson.py \
+>devasc@labvm:\~/labs/devnet-src/parsing$ python3 parsejson.py \
 ... \
 access_token: ZDI3MGEyYzQtNmFlNS00NDNhLWFlNzAtZGVjNjE0MGU1OGZmZWNmZDEwN2ItYTU3 \
 expires_in: 1209600 \
@@ -117,7 +117,7 @@ print("The token expires in {} seconds.".format(ouryaml['expires_in']))
 ```
 
 Save and run the script, you should see this output:
->devasc@labvm:~/labs/devnet-src/parsing$ python3 parseyaml.py \
+>devasc@labvm:\~/labs/devnet-src/parsing$ python3 parseyaml.py \
 {'access_token': 'ZDI3MGEyYzQtNmFlNS00NDNhLWFlNzAtZGVjNjE0MGU1OGZmZWNmZDEwN2ItYTU3', \
 'expires_in': 1209600, 'refresh_token': \
 'MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MDEyMzQ1Njc4OTEyMzQ1Njc4', \
@@ -136,7 +136,7 @@ print(json.dumps(ouryaml, indent=4))
 ```
 
 Save and run the script, you should see this output added at the end:
->devasc@labvm:~/labs/devnet-src/parsing$ python3 parseyaml.py \
+>devasc@labvm:\~/labs/devnet-src/parsing$ python3 parseyaml.py \
 ... \
 { \
  "access_token": "ZDI3MGEyYzQtNmFlNS00NDNhLWFlNzAtZGVjNjE0MGU1OGZmZWNmZDEwN2ItYTU3", \
